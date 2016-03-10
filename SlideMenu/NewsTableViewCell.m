@@ -12,6 +12,8 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.postAuthorView.layer.cornerRadius = self.postAuthorView.frame.size.width / 2;
+    self.postAuthorView.layer.masksToBounds = true;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

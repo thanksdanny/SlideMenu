@@ -7,8 +7,10 @@
 //
 
 #import "NewsTableViewController.h"
+#import "NewsTableViewCell.h"
 
-@interface NewsTableViewController ()
+@interface NewsTableViewController () <UITableViewDataSource, UITableViewDelegate>
+
 
 @end
 
@@ -17,11 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.title = @"Everyday Moments";
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.view.backgroundColor = [UIColor colorWithRed:0.062 green:0.062 blue:0.07 alpha:1];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,70 +30,47 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 4;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor clearColor];
     
-    // Configure the cell...
-    
+    if (indexPath.row == 0) {
+        cell.postImageView.image = [UIImage imageNamed:@"1"];
+        cell.postTitle.text = @"Love mountain.";
+        cell.postAuthor.text = @"Allen Wang";
+        cell.postAuthorView.image = [UIImage imageNamed:@"a"];
+    } else if (indexPath.row == 1) {
+        cell.postImageView.image = [UIImage imageNamed:@"2"];
+        cell.postTitle.text = @"Love mountain.";
+        cell.postAuthor.text = @"Allen Wang";
+        cell.postAuthorView.image = [UIImage imageNamed:@"b"];
+    } else if (indexPath.row == 2) {
+        cell.postImageView.image = [UIImage imageNamed:@"3"];
+        cell.postTitle.text = @"Love mountain.";
+        cell.postAuthor.text = @"Allen Wang";
+        cell.postAuthorView.image = [UIImage imageNamed:@"c"];
+    } else {
+        cell.postImageView.image = [UIImage imageNamed:@"4"];
+        cell.postTitle.text = @"Love mountain.";
+        cell.postAuthor.text = @"Allen Wang";
+        cell.postAuthorView.image = [UIImage imageNamed:@"d"];
+    }
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

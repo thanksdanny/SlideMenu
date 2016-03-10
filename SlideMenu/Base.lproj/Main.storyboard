@@ -66,6 +66,12 @@
                                         <constraint firstItem="cn7-oM-mbg" firstAttribute="top" secondItem="hVM-0o-Kob" secondAttribute="top" id="quN-Pu-UvL"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="postAuthor" destination="YmT-cP-KbO" id="gQT-hE-8gX"/>
+                                    <outlet property="postAuthorView" destination="rAj-16-nf0" id="t0i-q7-OGc"/>
+                                    <outlet property="postImageView" destination="cn7-oM-mbg" id="XhA-5s-1kD"/>
+                                    <outlet property="postTitle" destination="fNP-n4-KPj" id="ZMX-XG-cix"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

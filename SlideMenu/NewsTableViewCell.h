@@ -10,4 +10,9 @@
 
 @interface NewsTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *postImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *postAuthorView;
+@property (weak, nonatomic) IBOutlet UILabel *postTitle;
+@property (weak, nonatomic) IBOutlet UILabel *postAuthor;
+
 @end
