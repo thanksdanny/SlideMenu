@@ -1,5 +1,5 @@
 //
-//  NewsTableViewController.h
+//  MenuTableViewCell.h
 //  SlideMenu
 //
 //  Created by Danny Ho on 3/10/16.
@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewsTableViewController : UITableViewController
+@interface MenuTableViewCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UILabel *menuItem;
 
 @end
-

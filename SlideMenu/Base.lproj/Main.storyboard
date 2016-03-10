@@ -91,16 +91,16 @@
             </objects>
             <point key="canvasLocation" x="902" y="424"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Menu Table View Controller-->
         <scene sceneID="CUE-gI-YjN">
             <objects>
-                <tableViewController id="zWv-nO-se6" sceneMemberID="viewController">
+                <tableViewController id="zWv-nO-se6" customClass="MenuTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hx3-t5-ZOv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="pXH-bw-zl5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="pXH-bw-zl5" customClass="MenuTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pXH-bw-zl5" id="yvI-N7-7hA">
@@ -122,6 +122,9 @@
                                         <constraint firstItem="waf-98-DJB" firstAttribute="top" secondItem="yvI-N7-7hA" secondAttribute="topMargin" constant="2" id="GtS-WR-8Hf"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="menuItem" destination="waf-98-DJB" id="GJ4-C7-M68"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

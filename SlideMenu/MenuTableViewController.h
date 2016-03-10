@@ -1,5 +1,5 @@
 //
-//  NewsTableViewController.h
+//  MenuTableViewController.h
 //  SlideMenu
 //
 //  Created by Danny Ho on 3/10/16.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewsTableViewController : UITableViewController
+@interface MenuTableViewController : UITableViewController
 
 @end
-
