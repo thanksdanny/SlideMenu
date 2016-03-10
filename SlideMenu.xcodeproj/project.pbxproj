@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		FD21DAE91C915D520028F0E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD21DAE81C915D520028F0E5 /* main.m */; };
 		FD21DAEC1C915D520028F0E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD21DAEB1C915D520028F0E5 /* AppDelegate.m */; };
-		FD21DAEF1C915D520028F0E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD21DAEE1C915D520028F0E5 /* ViewController.m */; };
 		FD21DAF21C915D520028F0E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD21DAF01C915D520028F0E5 /* Main.storyboard */; };
 		FD21DAF41C915D520028F0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD21DAF31C915D520028F0E5 /* Assets.xcassets */; };
 		FD21DAF71C915D520028F0E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD21DAF51C915D520028F0E5 /* LaunchScreen.storyboard */; };
+		FD21DB001C9160550028F0E5 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD21DAFF1C9160550028F0E5 /* NewsTableViewController.m */; };
+		FD21DB031C91606D0028F0E5 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD21DB021C91606D0028F0E5 /* NewsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		FD21DAE81C915D520028F0E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD21DAEA1C915D520028F0E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD21DAEB1C915D520028F0E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FD21DAED1C915D520028F0E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FD21DAEE1C915D520028F0E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FD21DAF11C915D520028F0E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD21DAF31C915D520028F0E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD21DAF61C915D520028F0E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD21DAF81C915D520028F0E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD21DAFE1C9160550028F0E5 /* NewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewController.h; sourceTree = "<group>"; };
+		FD21DAFF1C9160550028F0E5 /* NewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewController.m; sourceTree = "<group>"; };
+		FD21DB011C91606D0028F0E5 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		FD21DB021C91606D0028F0E5 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +63,11 @@
 			children = (
 				FD21DAEA1C915D520028F0E5 /* AppDelegate.h */,
 				FD21DAEB1C915D520028F0E5 /* AppDelegate.m */,
-				FD21DAED1C915D520028F0E5 /* ViewController.h */,
-				FD21DAEE1C915D520028F0E5 /* ViewController.m */,
 				FD21DAF01C915D520028F0E5 /* Main.storyboard */,
+				FD21DAFE1C9160550028F0E5 /* NewsTableViewController.h */,
+				FD21DAFF1C9160550028F0E5 /* NewsTableViewController.m */,
+				FD21DB011C91606D0028F0E5 /* NewsTableViewCell.h */,
+				FD21DB021C91606D0028F0E5 /* NewsTableViewCell.m */,
 				FD21DAF31C915D520028F0E5 /* Assets.xcassets */,
 				FD21DAF51C915D520028F0E5 /* LaunchScreen.storyboard */,
 				FD21DAF81C915D520028F0E5 /* Info.plist */,
@@ -149,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD21DAEF1C915D520028F0E5 /* ViewController.m in Sources */,
+				FD21DB001C9160550028F0E5 /* NewsTableViewController.m in Sources */,
 				FD21DAEC1C915D520028F0E5 /* AppDelegate.m in Sources */,
+				FD21DB031C91606D0028F0E5 /* NewsTableViewCell.m in Sources */,
 				FD21DAE91C915D520028F0E5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
